@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Súper App · Arrays</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div>
+      <p class="unidad">Unidad 11 · Arrays js</p>
+      <h1>Súper <em>App</em></h1>
+      <p class="bajada">Una lista de compras hecha con <code>push</code>, <code>splice</code> y <code>forEach</code>, y una góndola de ejercicios con arreglos.</p>
+    </div>
+    <div class="carrito" aria-hidden="true">🛒</div>
+  </header>
+
+  <main>
+    <section class="super">
+      <div class="ticket">
+        <p class="ticket__marca">SÚPER GARCÍA · CAJA 01</p>
+        <ol class="ticket__lista" id="lista"></ol>
+        <p class="ticket__total"><span>ARTÍCULOS</span><span id="total">0</span></p>
+      </div>
+
+      <div class="terminal">
+        <p class="terminal__titulo">Escribí un comando: <code>nuevo pan</code>, <code>listar</code>, <code>borrar 1</code> o <code>salir</code></p>
+        <pre class="terminal__salida" id="salida"></pre>
+        <form id="formComando" class="terminal__entrada">
+          <span>&gt;</span>
+          <input type="text" id="comando" placeholder="nuevo yerba" autocomplete="off" aria-label="Comando">
+        </form>
+        <div class="atajos">
+          <button type="button" data-comando="listar">listar</button>
+          <button type="button" data-comando="borrar 0">borrar 0</button>
+          <button type="button" id="btnPrompt">Versión con prompt</button>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="gondola">Góndola de ejercicios</h2>
+    <section class="ejercicios" id="ejercicios"></section>
+  </main>
+
+  <footer>Francisco García R. · Todos los console.log de la consigna están en la consola</footer>
+
+  <script src="consigna.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
